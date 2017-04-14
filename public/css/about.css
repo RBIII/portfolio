@@ -61,10 +61,18 @@
 .active li {
   position: absolute;
   top: 600px;
+  pointer-events: none;
+  opacity: 0;
+  transform: scale(0);
+  transition: 1s;
 }
 
 .active li.current {
-  top: 30px;
+  top: 0px;
+  pointer-events: auto;
+  opacity: 1;
+  transform: scale(1);
+  transition: 1s;
 }
 
 .carouselbox button {

@@ -1,11 +1,9 @@
 #intro-section {
-  background: url('/images/background.jpg');
+  background: url('/images/space-background.jpg');
   background-attachment: fixed;
   background-size: cover;
-
   height: 34rem;
   margin-bottom: 2rem;
-
 }
 
 #intro-container {

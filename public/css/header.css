@@ -62,6 +62,10 @@
   padding-top: 0.2rem;
 }
 
+#menu-image-container {
+  text-align: right;
+}
+
 @media screen and (max-width: 32em) {
   #buttons {
     display: none;
