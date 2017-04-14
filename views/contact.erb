@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%= erb :meta %>
+  </head>
+  <body>
+    <%= erb :header %>
+    <form id="form" action="<%= url('/mail.rb') %>" method="get">
+      <div class="single-line-input">
+        <label>Input Label
+          <input type="text" placeholder="Email*">
+        </label>
+      </div>
+      <div class="single-line-input">
+        <label>Input Label
+          <input type="text" placeholder="Phone Number">
+        </label>
+      </div>
+      
+      <input type="submit" value="Submit">
+    </form>
+    <%= erb :footer %>
+    <%= erb :javascripts %>
+  </body>
+</html>

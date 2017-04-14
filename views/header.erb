@@ -1,0 +1,52 @@
+<header id="header">
+  <div id="dropdown-menu">
+    <div id="dropdown-menu-body">
+      <div style="text-align: right;">
+        <a href="#" onclick="showMenu();">
+          <img id="menu-image" src="<%= url('/images/menu.png') %>" alt="MENU">
+        </a>
+
+        <a href="#" onclick="hideMenu();">
+          <img id="close-menu-image" src="<%= url('/images/close-icon.png') %>" alt="CLOSE MENU">
+        </a>
+      </div>
+
+      <div id="small-screen-menu">
+        <ul id="menu-options">
+          <a href="<%= url('/') %>">
+            <li id="option-1" class='option'>
+              PROJECTS
+            </li>
+          </a>
+          <a href="<%= url('/about') %>">
+            <li id="option-2" class='option'>
+              ABOUT
+            </li>
+          </a>
+          <a href="<%= url('/contact') %>">
+            <li id="option-3" class='option'>
+              CONTACT
+            </li>
+          </a>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <table id="logo-and-buttons">
+    <tbody>
+      <tr>
+        <td id="logo">
+          <a href="<%= url('/') %>">
+            <img id="logo-image" src="<%= url('/images/logo.png') %>" alt="ROBERT BASSO">
+          </a>
+        </td>
+        <td id="buttons">
+          <a href="<%= url('/contact') %>" id="contact-button" class="round button">CONTACT</a>
+          <a href="<%= url('/about') %>" id="about-button" class="round button">ABOUT</a>
+          <a href="<%= url('/') %>" id="projects-button" class="round button">PROJECTS</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</header>

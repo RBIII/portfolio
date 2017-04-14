@@ -1,0 +1,46 @@
+#intro-section {
+  background: url('/images/background.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+
+  height: 34rem;
+  margin-bottom: 2rem;
+
+}
+
+#intro-container {
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 14%;
+  font-family: 'Jura', sans-serif;
+}
+
+#projects {
+  max-width: 740px;
+}
+
+#project-text {
+  margin-bottom: 2rem;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+.project {
+  text-align: center;
+  margin-bottom: 4%;
+}
+
+.project-image {
+  max-width: 320px;
+}
+
+.project-image:hover {
+  opacity: 0.6;
+}
+
+.project-title {
+  margin-top: 1rem;
+  color: black;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+}

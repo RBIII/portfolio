@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%= erb :meta %>
+  </head>
+  <body>
+    <%= erb :header %>
+    <div id="intro-section">
+      <div id="intro-container">
+        <p id="intro-text" class="text">
+          I'm a Full Stack Web Developer from Boston with a passion for clean
+          backend archictecure and responsive front end design
+        </p>
+
+        <p class="text">
+          This is
+          my portfolio.
+        </p>
+      </div>
+    </div>
+
+    <div id="projects" class="row">
+      <h3 id="project-text" class="small-12 columns">PROJECTS</h3>
+      <div class="project medium-6 small-12 columns">
+        <a href="https://news-reader-site.herokuapp.com/">
+          <img class="project-image" src="<%= url('/images/news-reader.png') %>" alt="News Reader">
+          <h5 class="project-title">News Reader</h5>
+        </a>
+      </div>
+
+      <div class="project medium-6 small-12 columns">
+        <a href="https://park-easy.herokuapp.com/">
+          <img class="project-image" src="<%= url('/images/park-easy.png') %>" alt="Park Easy">
+          <h5 class="project-title">Park Easy</h5>
+        </a>
+      </div>
+
+      <div class="project medium-6 small-12 columns">
+        <a href="http://showupboston.herokuapp.com/">
+          <img class="project-image" src="<%= url('/images/showup.png') %>" alt="Show Up Boston">
+          <h5 class="project-title">ShowUp Boston</h5>
+        </a>
+      </div>
+
+      <div class="project medium-6 small-12 columns">
+        <a href="https://sitcoms.herokuapp.com/">
+          <img class="project-image" src="<%= url('/images/sitcom-reviews.png') %>" alt="Sitcom Reviews">
+          <h5 class="project-title">Sitcom Reviews</h5>
+        </a>
+      </div>
+    </div>
+
+    <%= erb :footer %>
+    <%= erb :javascripts %>
+  </body>
+</html>

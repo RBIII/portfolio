@@ -1,0 +1,145 @@
+#about-container {
+  text-align: center;
+}
+
+#about-me-header {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #5e5e5e;
+  font-family: 'Raleway', sans-serif;
+}
+
+#about-me-text {
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: 'Raleway', sans-serif;
+
+}
+
+#favorite-things {
+  max-width: 40%;
+  display: inline-grid;
+  text-align: right;
+  color: #535458;
+}
+
+#my-summary {
+  margin-left: 2%;
+  max-width: 50%;
+  display: inline-grid;
+  text-align: left;
+  font-family: 'Jura', sans-serif;
+}
+
+.me {
+  width: 900px;
+}
+
+.carouselbox {
+  font-family: helvetica,sans-serif;
+  position: relative;
+  margin: 1em;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 10px #ccc;
+  overflow: hidden;
+  height: 600px;
+}
+
+.content {
+  margin: 0;
+  padding: 0;
+}
+
+.content li {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  list-style: none;
+  text-align: center;
+}
+
+.active li {
+  position: absolute;
+  top: 600px;
+}
+
+.active li.current {
+  top: 30px;
+}
+
+.carouselbox button {
+  border: none;
+}
+
+.active button {
+  display: block;
+  margin-top: 250px;
+  position: relative;
+  z-index: 10;
+  padding: 0;
+}
+
+.arrow {
+  width: 38px;
+}
+
+@media screen and (max-width: 975px) {
+  .carouselbox {
+    height: 550px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .carouselbox {
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 825px) {
+  .carouselbox {
+    height: 450px;
+  }
+
+  .active button {
+    margin-top: 180px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .carouselbox {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .carouselbox {
+    height: 350px;
+  }
+
+  .active button {
+    margin-top: 150px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .carouselbox {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+    .carouselbox {
+      height: 250px;
+    }
+
+    .active button {
+      margin-top: 120px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+  .carouselbox {
+    max-width: 350px;
+    margin: 0 auto;
+  }
+}

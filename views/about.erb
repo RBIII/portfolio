@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%= erb :meta %>
+  </head>
+  <body>
+    <%= erb :header %>
+
+    <div id="about-container">
+      <h3 id="about-me-header">About Robert</h3>
+      <div class="carouselbox active">
+
+        <ol class="content">
+          <button class="small-1 columns prev">
+            <img class="arrow" src="<%= url('/images/arrow.png') %>" alt="◀" style="transform: rotate(180deg);">
+          </button>
+
+          <li class="small-10 columns current">
+            <img class="me" src="<%= url('/images/me-3.jpg') %>" alt="ME">
+          </li>
+          <li>
+            <img class="me" src="<%= url('/images/me-2.jpg') %>" alt="ME">
+          </li>
+          <li>
+            <img class="me" src="<%= url('/images/me-1.jpg') %>" alt="ME">
+          </li>
+
+          <button class="small-1 columns next">
+            <img class="arrow" src="<%= url('/images/arrow.png') %>" alt="▶">
+          </button>
+        </ol>
+      </div>
+
+      <div id="about-me-text">
+        <h3>"Not all those who wander are lost" - J. R. R. Tolkien</h3>
+
+        <div id="favorite-things">
+          <h6>DEVELOPER</h6>
+          <h6>ULTIMATE FRISBEE PLAYER</h6>
+          <h6>SNOWBOARDER</h6>
+          <h6>GAMER</h6>
+          <h6>TRAVLER</h6>
+          <h6>MOVIE GOER</h6>
+          <h6>PLAYLIST MAKER</h6>
+          <h6>BASKETBALL FAN</h6>
+          <h6>REDDITOR</h6>
+          <h6>ASPIRING COOK</h6>
+        </div>
+
+        <div id="my-summary">
+          <p>
+            Hey there! My name is Robert Basso. I'm a 26 year old Ruby on Rails
+            developer currently living in Boston, MA. I love honing my skillset
+            by working on projects with challenging front and backend components.
+          </p>
+
+          <p>
+            In my spare time I love to play Ultimate Frisbee, hitting the slopes,
+            seeing movies, spending time with friends, and learning to cook.
+          </p>
+
+          <p>
+            If you think I might be a good fit for your project feel free to reach
+            out via my email address (listed below) or by visiting the "contact"
+            tab above. You won't be disappointed.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <%= erb :footer %>
+    <%= erb :javascripts %>
+  </body>
+</html>

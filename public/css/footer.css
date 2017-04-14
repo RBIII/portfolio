@@ -1,0 +1,35 @@
+#footer {
+  min-height: 8rem;
+  min-width: 100%;
+  background-color: #2b2b2f;
+  color: white;
+}
+
+#connect-section {
+  padding-top: 1rem;
+  padding-left: 3%;
+  width: 40%;
+  display: inline-grid;
+  margin-left: auto;
+}
+
+#copyright-section {
+  padding-top: 1rem;
+  width: 55%;
+  display: inline-grid;
+  margin-right: auto;
+  text-align: right;
+  font-family: 'Raleway', sans-serif;
+}
+
+#connect-text {
+  font-size: 20px;
+  margin-left: 0.2rem;
+  font-family: 'Raleway', sans-serif;
+}
+
+.connect-image {
+  height: 20px;
+  width: 20px;
+  margin-left: 0.2rem;
+}
