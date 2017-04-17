@@ -13,10 +13,6 @@
   font-family: 'Jura', sans-serif;
 }
 
-#projects {
-  max-width: 740px;
-}
-
 #project-text {
   margin-bottom: 2rem;
   text-align: center;
@@ -29,7 +25,7 @@
 }
 
 .project-image {
-  max-width: 320px;
+  width: 900px;
 }
 
 .project-image:hover {

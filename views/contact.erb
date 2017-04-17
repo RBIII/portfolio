@@ -5,19 +5,32 @@
   </head>
   <body>
     <%= erb :header %>
-    <form id="form" action="<%= url('/mail.rb') %>" method="get">
-      <div class="single-line-input">
-        <label>Input Label
-          <input type="text" placeholder="Email*">
+    <h3 id="contact-header">Contact Me</h3>
+    <form id="form" action="/contact" method="POST">
+      <div>
+        <label>Your Email
+          <input class="field" name="email" type="text" placeholder="Email*">
         </label>
       </div>
-      <div class="single-line-input">
-        <label>Input Label
-          <input type="text" placeholder="Phone Number">
+      <div>
+        <label>Your Phone Number (optional)
+          <input class="field" name="phone_number" type="tel" placeholder="Phone Number">
         </label>
       </div>
-      
-      <input type="submit" value="Submit">
+      <div>
+        <label>Subject
+          <input class="field" name="subject" type="text" placeholder="Subject*">
+        </label>
+      </div>
+      <div>
+        <label>Your Message
+          <textarea id="message" class="field" name="message" placeholder="Message..."></textarea>
+        </label>
+      </div>
+
+      </div>
+
+      <input class="round button" id="submit" type="submit" value="Submit">
     </form>
     <%= erb :footer %>
     <%= erb :javascripts %>

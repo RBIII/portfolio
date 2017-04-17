@@ -44,7 +44,7 @@
 #close-menu-image {
   height: 1.75rem;
   width: 1.75rem;
-  margin-right: .3rem;
+  margin-right: 0.4rem;
 }
 
 #close-menu-image {
@@ -73,7 +73,7 @@
 
   #dropdown-menu {
     display: block;
-    height: 2rem;
+    min-height: 2rem;
     background-color: #1d1d21;
   }
 

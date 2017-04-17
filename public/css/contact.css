@@ -1,8 +1,23 @@
-#form {
-  margin-top: 1rem;
+#form,
+#submit {
+  max-width: 720px;
+  margin: 1rem auto;
+  font-family: 'Raleway', sans-serif;
 }
 
-.single-line-input {
-  max-width: 720px;
-  margin: 0 auto;
+#message {
+  height: 250px;
+}
+
+#contact-header {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #5e5e5e;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.field {
+  font-family: 'Jura', sans-serif;
 }
