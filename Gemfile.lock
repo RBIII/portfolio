@@ -51,6 +51,7 @@ PLATFORMS
 DEPENDENCIES
   mailgun-ruby
   pry
+  rack
   sass
   sinatra
   sinatra-flash
