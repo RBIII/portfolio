@@ -5,6 +5,22 @@
   </head>
   <body>
     <%= erb :header %>
+    <% if flash[:alert] %>
+      <div class="alert callout" data-closable>
+        <%= styled_flash %>
+        <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    <% elsif flash[:notice] %>
+      <div class="success callout" data-closable="slide-out-right">
+        <%= styled_flash %>
+        <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    <% end %>
+
     <h3 id="contact-header">Contact Me</h3>
     <form id="form" action="/contact" method="POST">
       <div>
@@ -13,13 +29,13 @@
         </label>
       </div>
       <div>
-        <label>Your Phone Number (optional)
-          <input class="field" name="phone_number" type="tel" placeholder="Phone Number">
+        <label>Subject
+          <input class="field" name="subject" type="text" placeholder="Subject*">
         </label>
       </div>
       <div>
-        <label>Subject
-          <input class="field" name="subject" type="text" placeholder="Subject*">
+        <label>Your Phone Number (optional)
+          <input class="field" name="phone_number" type="tel" placeholder="Phone Number">
         </label>
       </div>
       <div>
