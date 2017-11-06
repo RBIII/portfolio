@@ -16,6 +16,11 @@ get '/contact' do
   erb :contact
 end
 
+get '/resume' do
+  erb :resume
+end
+
+
 post '/contact' do
   mg_client = Mailgun::Client.new('key-71aa3089c30f441a714c68fd8fef910d')
   if params[:email].empty?

@@ -21,17 +21,19 @@
 
 #projects-button,
 #contact-button,
-#about-button {
+#about-button,
+#resume-button {
   float: right;
   margin-top: 10px;
 }
 
-#contact-button {
-  margin-right: 8%;
+#resume-button {
+  margin-right: 3%;
 }
 
 #projects-button,
-#about-button {
+#about-button,
+#contact-button {
   margin-right: 1%;
 }
 
@@ -52,21 +54,27 @@
 }
 
 #option-1,
-#option-2 {
+#option-2,
+#option-3 {
   padding-bottom: 0.2rem;
   border-bottom: 1px solid grey;
 }
 
 #option-2,
-#option-3 {
+#option-3,
+#option-4 {
   padding-top: 0.2rem;
+}
+
+#option-4 {
+  padding-bottom: 5px;
 }
 
 #menu-image-container {
   text-align: right;
 }
 
-@media screen and (max-width: 32em) {
+@media screen and (max-width: 600px) {
   #buttons {
     display: none;
   }
@@ -89,7 +97,6 @@
     list-style: none;
     margin: 0;
     text-align: center;
-    padding-bottom: 5px;
   }
 
   .option,
