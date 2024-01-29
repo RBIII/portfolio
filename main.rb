@@ -1,4 +1,5 @@
 require 'sinatra'
+require 'rackup'
 require 'pry'
 require 'mailgun'
 require 'sinatra/flash'
